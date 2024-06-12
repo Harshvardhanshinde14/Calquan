@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;    
+}
+#heading {
+    background-image: url('/P.T.M/images/image22.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    background-color: #7a869285;/*0c121a85*/
+    text-shadow: 2px 2px 4px black; /* Black text shadow */
+  }
+  /* Animation styling */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #heading h3 {
+    font-size: 4em; /* Default value for larger screens */
+    font-weight: 500;
+    padding-top: 60px;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  #heading h5 {
+    color: white;
+    text-shadow: 2px 2px 4px black; /* Black text shadow */
+  }
+  
+  /* Media query for devices with a max width of 1200px */
+  @media (max-width: 1200px) {
+    #heading {
+      height: 150px; /* Adjust height for large tablets and small desktops */
+    }
+    #heading h3 {
+      font-size: 3em; /* Adjust font size for medium screens */
+    }
+    #heading h5 {
+      font-size: 1.5em; /* Adjust font size for medium screens */
+    }
+  }
+  /* Media query for devices with a max width of 768px (tablets) */
+  @media (max-width: 768px) {
+    #heading {
+      height: 150px; /* Adjust height for tablets */
+    }
+    #heading h3 {
+      font-size: 2.5em; /* Adjust font size for tablets */
+      padding-top: 10px;
+    }
+    #heading h5 {
+      font-size: 1.2em; /* Adjust font size for tablets */
+    }
+  }
+  
+  /* Media query for devices with a max width of 480px (mobile phones) */
+  @media (max-width: 480px) {
+    #heading {
+      height: 120px; /* Adjust height for mobile phones */
+    }
+    #heading h3 {
+      font-size: 2em; /* Adjust font size for mobile phones */
+      padding: 10px;
+    }
+    #heading h5 {
+      font-size: 1em; /* Adjust font size for mobile phones */
+    }
+  }
+  
+#arrow{
+    font-size: 15px;
+}
+.subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;  
+}
+.infoList1 ul li {
+        margin-bottom: 10px;
+    }
+    .ptminfo {
+        position: relative; /* Ensure position context */
+        overflow: hidden;   /* Hide overflowing parts of the image */
+        border: 1px solid black;
+         border-radius: 10px;
+         /* margin-top: 10px; */
+      } 
+      .ptminfo img {
+        width: 100%;        
+        height: auto;   
+        display: block;
+        margin: 0 auto;   
+      }
+/* Styles for infoList1 section */
+.infoList1 {
+    background-color: #f5f5f5; /* Background color */
+    padding: 20px; /* Add padding for better readability */
+    border-radius: 10px; /* Rounded corners for the container */
+    display: block; /* Display as block */
+    margin: 20px 70px ; /* Margin around the block */
+    color:  black;
+}
+
+.infoList1 h4 {
+    margin-top: 0; /* Remove default margin for h4 */
+    color: rgb(0,0,100);
+}
+
+.infoList1 ul {
+    /* list-style-type: none; Remove bullet points */
+    padding: 10px; /* Remove default left padding */
+    margin-top: 20px;
+}
+
+.infoList1 li {
+    margin-bottom: 10px; /* Add spacing between list items */
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    .infoList1 {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
+.ptm_description{
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: justify; 
+    text-align: center;    
+}
+@media (max-width: 768px) {
+   .infoList1 h4{
+        font-size: 1rem;
+        padding-left: 0px;
+    }
+    .infoList1 {
+        margin-left: 0;
+        text-align: justify;
+    }
+    .infoList1 ul {
+        padding-left: 15px; /* Adjust padding for smaller screens */
+        text-align: justify;
+        padding-right: 0px;
+    }
+    div.infoList1{
+        margin-left: 0px;
+        padding-left: 25px;
+        padding-right: 32px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .subtitle {
+        font-size: 18px;
+      margin: 10px;
+      text-align: center;
+}
+    .ptm_description{
+        font-size: 16px;
+        margin-top: 20px;
+        margin: 25px;
+        text-align: justify;
+    }
+}
+.imageCaption {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+}
+#ptmImage{
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+    overflow: hidden;
+}

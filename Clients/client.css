@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+#heading {
+  background-image: url('/Clients/images/bg-1Career-\ \(1\).jpg');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  background-color: #0c121a85;
+  text-shadow: 2px 2px 4px black; /* Black text shadow */
+}
+
+/* Animation styling */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+#heading h3 {
+  font-size: 4em; /* Default font size */
+  font-weight: 500;
+  padding-top: 60px;
+  color: white;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Media query for mobile view */
+@media (max-width: 480px) {
+  #heading {
+      height: 150px; /* Adjusted height for mobile phones */
+  }
+  
+  #heading h3 {
+      font-size: 2em; /* Adjusted font size for mobile phones */
+      padding-top: 40px;
+  }
+}
+
+a.button{
+  color: black;
+  font-size: 20px;
+}
+.logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center logos horizontally */
+  margin: 20px auto; /* Add margin to center the logo container */
+  padding: 0 10px; /* Add padding to the sides */
+}
+
+.logo-container .col-lg-1 {
+  flex: 0 0 12.5%; /* Set width to 12.5% for each logo container to fit 8 in a row */
+  max-width: 12.5%;
+  text-align: center; /* Center-align logos */
+  margin-bottom: 20px; /* Add space between rows */
+}
+
+.logo-container img {
+  max-width: 100px; /* Set maximum width for logos */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure logos are centered within their container */
+  margin: 0 auto; /* Center-align logos */
+  transition: transform 0.3s ease; /* Add transition effect on hover */
+}
+
+.logo-container img:hover {
+  transform: scale(1.1); /* Enlarge image on hover */
+}
+
+.logo-container p {
+  font-size: 12px; /* Set font size for client text */
+  text-align: center; /* Center-align client text */
+  margin-top: 5px; /* Add space between logo and text */
+  color: black;
+  font-weight: 600;
+ 
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  /* For medium and small devices (<=992px) */
+  .logo-container .col-lg-1 {
+      flex: 0 0 25%; /* Set width to 25% for each logo container */
+      max-width: 25%;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  /* For small devices (<=768px) */
+  .logo-container .col-lg-1 {
+      flex: 0 0 33.33%; /* Set width to 33.33% for each logo container */
+      max-width: 33.33%;
+  }
+  
+}
+
+@media (max-width: 576px) {
+  /* For extra small devices (<=576px) */
+  .logo-container .col-lg-1 {
+      flex: 0 0 50%; /* Set width to 50% for each logo container */
+      max-width: 50%;
+  }
+
+  .logo-container p {
+      font-size: 10px; /* Decrease font size for small devices */
+  }
+  
+}
+.img-fluid{
+border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.col-lg-12{
+  margin-bottom: 20px;
+}

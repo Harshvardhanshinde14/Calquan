@@ -1,0 +1,239 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* Container styling */
+.container-fluid {
+    margin-top: 30px;
+}
+.col-md-9{
+    margin-bottom: 10px;
+}
+#heading {
+    background-image: url('/Community/News/images/News\ heading\ .jpg');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    background-color: #0c121a85;
+    text-shadow: 2px 2px 4px black; /* Black text shadow */
+}
+/* Animation styling */
+@keyframes fadeIn1 {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#heading h3 {
+    font-size: 4em; /* Default font size */
+    font-weight: 500;
+    padding-top: 60px;
+    color: white;
+    animation: fadeIn1 1s ease-in-out;
+}
+
+/* Media query for mobile view */
+@media (max-width: 480px) {
+    #heading {
+        height: 150px; /* Adjusted height for mobile phones */
+    }
+    
+    #heading h3 {
+        font-size: 2em; /* Adjusted font size for mobile phones */
+        padding-top: 40px;
+    }
+}
+#news-index{
+    flex: 0 0 20%;
+}
+#datepicker {
+    display: block;
+    width: 65%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+/* Media query for small screens */
+@media (max-width: 576px) {
+    .datepicker {
+        width: 100%; /* Adjust width to fill the container */
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+    #news-index {
+        flex:1;
+    }
+}
+/* News List styling */
+#news-container {
+    overflow-y: auto;
+    height: 400px;
+    border: 1px solid #404041;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+/* Media query for small screens */
+@media (max-width: 576px) {
+    #news-container {
+        height: auto; /* Adjust height for small screens */
+        max-height: 300px; /* Optional: Set a maximum height for small screens */
+     
+    }
+}
+.card-body1{
+    text-align: center;
+    padding: 5px;
+    height: auto;
+}
+#prevBtn,
+#nextBtn {
+    margin-top: 4px;
+    cursor: pointer;
+    border: none;
+}
+#prevBtn:hover,
+#nextBtn:hover {
+    background-color:#c2cccc;
+    color: #fff;
+}
+#prevBtn {
+    margin-left: 5px;
+    font-size: 15px;
+    background-color: #c2cccc;
+}
+#nextBtn {
+    margin-left: 3px;
+    font-size: 15px;
+    background-color: #c2cccc;
+}
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    height: auto;
+}
+#card-box{
+    border: 1px solid;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card-title {
+    cursor: pointer;
+    font-size: 15px;   
+}
+.card-subtitle{
+   
+    font-size: 12px;
+}
+
+/* Selected News styling */
+#selected-news {
+    height: 400px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+    #selected-news{
+        margin-top: 20px;
+    }
+  }
+/* Media query for small screens */
+@media (max-width: 576px) {
+    .news-date {
+        position: sticky;
+        top: 0;
+        background-color: #ffffff;
+        z-index: 1000; /* Ensure it's above other elements */
+        padding: 10px;
+    }
+}
+
+/* Date Selector styling */
+#date-selector {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adjust the gap between elements as needed */
+}
+input#datepicker.form-control.hasDatepicker {
+    width: 250px;
+    margin-right: 10px;
+}
+
+button.btn.btn-primary.btn-block.mt-2 {
+    width: 100px;
+}
+/* Custom datepicker styling */
+.custom-datepicker {
+    border: 1px solid #848080;
+    background-color: #f9f9f9;
+    z-index: 9999; 
+    position: absolute !important;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-datepicker-header {
+    background-color: #a99393;
+    color: #fff;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.custom-datepicker-day {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.custom-datepicker-day:hover {
+    background-color: #e9e9e9;
+}
+/* Responsive object */
+.web-object {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.web-object object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Media query for small screens */
+@media (max-width: 576px) {
+   
+    
+    .web-object {
+        padding-bottom: 75%; /* Adjust aspect ratio for smaller screens */
+    }
+}
+@media (max-width: 576px) {
+    /* Adjust width and font size for smaller screens */
+    #datepicker {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+}
+

@@ -1,0 +1,107 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 1rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: .25rem;
+}
+.navbar-light .navbar-nav .nav-link {
+    color:black;
+    font-weight: 500;
+    font-size: 20px;
+}
+.navbar-nav .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: black;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    font-size: 15px;
+}
+.navbar {
+    background-color: #ffffff; /* Navbar background color */
+    border-bottom: 1px solid #e0e0e0; /* Bottom border */
+    padding: 10px 20px; /* Padding */
+}
+
+/* Navbar Brand Styles */
+.navbar-brand img {
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure image doesn't overflow */
+}
+
+/* Navbar Toggler Styles */
+.navbar-toggler {
+    border: none; /* Remove default border */
+}
+
+/* Navbar Link Styles */
+.navbar-nav .nav-link {
+    color: #333333; /* Link text color */
+    font-weight: bold; /* Bold text */
+    padding: 10px 15px; /* Padding */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Navbar Link Hover Styles */
+.navbar-nav .nav-link:hover {
+    color: #007BFF; /* Change color on hover */
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    border: none; /* Remove default border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* Dropdown Item Styles */
+.dropdown-item {
+    color: #333333; /* Item text color */
+    font-weight: normal; /* Normal text weight */
+    padding: 8px 20px; /* Padding */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Dropdown Item Hover Styles */
+.dropdown-item:hover {
+    background-color: #f8f9fa; /* Change background color on hover */
+}
+
+/* Active Link Styles */
+.navbar-nav .nav-item.active .nav-link {
+    color: #007BFF; /* Active link color */
+}
+/* .navbar-nav .nav-item {
+      border-right: 1px solid #0a0a0a; /* Vertical line 
+    } */
+
+    /* Remove border-right from last menu item */
+    .navbar-nav .nav-item:last-child {
+      border-right: none;
+    }
+    .fa-solid {
+        color: rgb(129, 118, 118);
+    }
+    

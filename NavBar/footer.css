@@ -1,0 +1,48 @@
+/* Footer Styles */
+footer {
+  background-color: #cdd1d68a;
+  padding: 20px 0;
+  text-align: left; /* Center-align the content */
+}
+footer:hover {
+  background-color: #b0b7bf; /* Background color change on hover */
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#navbar-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;}
+
+.nav-list {
+  margin: 10px; /* Adjust spacing between navigation lists */
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .nav-list {
+      display: inline-block;
+  }
+}
+
+/* Additional Styles */
+h5 {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+a:hover {
+  color: rgb(1, 2, 33);
+  text-decoration: none;
+}
+
+.footer-text {
+  font-size: 12px;
+}

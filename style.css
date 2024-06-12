@@ -1,0 +1,460 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+/* Default styles */
+.container {
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center align */
+    padding: 0 15px; /* Add some padding */
+}
+.section1 {
+    background-size: cover;
+    background-position: center;
+    color: white; 
+   height: 100vh;
+   width: auto;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+div.section1_text {
+   width: 100%;
+   height: auto;
+    color: white;
+    opacity: 100%;
+    text-align: center;
+    padding: 20px;  
+}
+div.section1_text h1{
+    font-weight: 800;
+    animation: fadeIn 1s ease-in-out;
+    text-shadow: 2px 2px 4px black; /* Black text shadow */
+}
+/* Define a keyframe animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+
+ div.col-12{
+    margin-top: 40px;
+} 
+/* Style the feature items */
+.feature-row {
+    display: flex; /* Arrange items in a row */
+    justify-content: space-between; /* Distribute space between items */
+    height: 410px;
+}
+.feature-item {
+    flex: 0 0 23%;
+    padding: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    text-decoration: none; 
+    color: #333;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    background-color:rgb(240, 240, 255) ;
+  }
+  .feature-item:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+    text-decoration: none; /* Remove underline on hover */
+    transform: translateY(-5px); /* Move up slightly on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Change shadow on hover */
+}
+.feature-item h4 {
+    margin-bottom: 20px; /* Add some space below the title */
+}
+
+.feature-item h5 {
+    color: rgb(80, 80, 160);
+    margin-bottom: 10px; /* Add some space below the subtitle */
+    text-align: justify;
+}
+
+.feature-item p {
+    font-size: 14px; /* Adjust paragraph font size */
+    text-align: justify;
+    color:  black;
+}
+h4{
+    color: rgb(0,0,100);
+}
+.title-product {
+    opacity: 0;
+    transform: translateY(-20px); /* Translate from the top */
+    transition: opacity 1s, transform 1s;
+    margin-bottom: 40px;
+}
+
+.title-product.animated {
+    margin-top: 25 px;
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Styling for Links */
+a {
+    color: #000; /* Set link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a :hover {
+    color: rgb(0,0,100); /* Change color on hover */
+}
+img#product-icon{
+width: 60px;    
+vertical-align: bottom;
+color: rgb(129, 118, 118);
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+/* Styles for Inquiries Section */
+#inqueries_section{
+   
+    padding-left: 30px;
+    text-align: justify;
+    padding-right: 30px;
+}
+#inqueries_section h2 {
+    margin-bottom: 10px;
+   
+}
+
+#inqueries_section p {
+    margin-bottom: 20px;
+}
+
+/* Styles for Office Section */
+.office_title {
+    padding-left: 15px;
+    margin-top: 0px;
+}
+.office_title img{
+    vertical-align: baseline;
+    color: rgb(129, 118, 118);
+}
+.col-5{
+    padding-right: 0px;
+}
+/* Styles for Contact form Section */
+
+.heading-contact{
+    margin-top: 60px;
+}
+/* Custom CSS */
+#contactForm div {
+    margin-bottom: 15px;
+}
+#contactForm label {
+    margin-bottom: 5px;
+}
+
+/* Styles for development center Section */
+
+.develop-centre{
+    margin-top: 60px;
+    padding-left: 15px;
+}
+.text-secondary {
+    color: #6c757d;
+    padding-left: 12px;
+}
+div.col-lg-7{
+    padding: 30px;
+}
+.col-lg-5 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.border-bb{
+    border-bottom: 7px solid yellow;
+    margin-left: 10px;
+}
+
+#headingicon{
+    color: rgb(129, 118, 118);
+    font-size: 35px;
+   
+}
+
+/* Add some spacing for better readability */
+.container {
+    margin-bottom: 30px;
+}
+ 
+  .fa-solid{
+        color:rgb(129, 118, 118);
+    }
+
+    /* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .section1 {
+        padding: 30px; /* Adjust padding for smaller screens */
+        height: auto; /* Adjust height as needed */
+    }
+    div.col-12 {
+        margin-top: 0px;
+    }
+    .title-product{
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    div.feature-row{
+        margin: 10px;
+    }
+    div.col-lg-5{
+        padding: 20px;
+    }
+    .col-lg-7,
+    .col-lg-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .develop-centre{
+        margin-top: 20px;
+        padding-left: 15px;
+        font-size: 29px;
+    }
+    .heading-contact{
+        margin-top: 40px;
+    }
+    .fw-bold{
+        padding-top: 40px;
+        padding-left: 10px;
+        font-size: 20px;
+    }
+    #inqueries_section,
+    .col-lg-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .text-secondary {
+        padding-left: 0;
+    }
+    #address{
+        padding-left: 15px;
+    }
+    #inqueries_section h2 {
+        margin-bottom: 10px;
+    }
+    
+    .col-lg-7 {
+        width: 100%;
+        
+    }
+    #prd1 {
+        margin-top: 57px;
+      } 
+      .social-icon{
+        font-size: 15px;
+        padding-left: 6px;
+      }
+      
+      .border-bb{
+        border-bottom: 7px solid yellow;
+        margin-left: 0px;
+    }
+    .office_title {
+        padding-left: 15px;
+        margin-top: 30px;
+    }
+    }
+.social-icon{
+    margin-top: 10px;
+    margin-left: 11px;
+    color: #6c757d;
+    padding-left: 0px;
+}
+/* Media query for small screens */
+@media (max-width: 576px) {
+.section1_text h1 {
+        font-size: 30px; /* Smaller font size for small screens */
+       
+    }
+    .feature-row {
+        display: flex; /* Arrange items in a row */
+        justify-content: space-between; /* Distribute space between items */
+        height: auto;
+    }
+}
+
+/* Media query for large screens */
+@media (min-width: 992px) {
+    .section1_text h1 {
+        font-size: 66px; /* Larger font size for large screens */
+    }
+    
+}
+/* Responsive styles */
+
+@media (max-width: 992px) {
+    .col-lg-7,
+    .col-lg-5 {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .fw-bold{
+        padding-top: 40px;
+        padding-left: 10px;
+    }
+}
+/* Styles for larger screens */
+@media screen and (min-width: 768px) {
+    .feature-row {
+        display: flex; /* Display items in a row */
+        justify-content: space-between; /* Distribute space between items */
+        height: auto;
+    }
+    .feature-item {
+        width: 30%; /* Adjust width as needed */
+    }
+
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 767px) {
+    .feature-row {
+        flex-direction: column;
+        justify-content: space-between; /* Distribute space between items */
+        height: auto;
+    }
+    .feature-item {
+        width: 100%; /* Take full width */
+        margin-bottom: 20px; /* Add some bottom margin */
+    }
+    .lineCenter {
+    
+        display: inline-block; /* Ensure the border only wraps around the content */
+        padding-bottom: 10px;
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    div.col-lg-7{
+        padding: 10px;
+    }
+    div.col-lg-5{
+        padding: 10px;
+
+    }
+    div.section1{
+        padding: 10px;
+
+    }
+    div.feature-row{
+        margin: 10px;
+    }
+   
+}
+.map-container {
+    margin-top: 20px;
+  }
+  
+  .button-container {
+    
+    margin-bottom: 20px;
+  }
+  .button-container button {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-right: 10px;
+    background-color: #5d9de2; /* Default button color */
+    color: #ffffff; /* Text color */
+    border: none;
+    cursor: pointer;
+    width: 15%; /* Set width */
+    height: 40px; /* Set height */
+  }
+  .btn{
+    background-color: #5d9de2; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+
+}
+button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+ 
+  /* Media query for smaller screens, changing button color */
+  @media screen and (max-width: 576px) {
+    .button-container button {
+      background-color: #007bff; /* Green color for smaller screens */
+    }
+  }
+ 
+   .our-social a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+   }
+   .our-social {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .our-social a i {
+    font-size: 30px;
+  }
+  
+  .our-social a:hover {
+    transform: translateY(-5px);
+  }
+  
+  .our-social a:hover i {
+    opacity: 0.8;
+  }
+  
+  .linkedin-icon {
+    color: #0077b5; /* LinkedIn color */
+  }
+  
+  .youtube-icon {
+    color: #ff0000; /* YouTube color */
+  }
+  @media screen and (max-width: 768px) {
+    .button-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+    }
+    .our-social a {
+        display: inline-block;
+        margin: 0 10px;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+       }
+    .button-container button {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      width: 50%;
+      font-size: 10px;
+    }
+   .fa-linkedin{
+    margin-left: 6px;
+   }
+  }
